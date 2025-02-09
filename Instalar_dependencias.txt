@@ -1,0 +1,4 @@
+composer require hashids/hashids
+composer require phpoffice/phpspreadsheet
+composer require setasign/fpdi
+composer require setasign/fpdf
