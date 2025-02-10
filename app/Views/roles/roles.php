@@ -5,8 +5,8 @@
         <hr color="cyan"></hr>
             <div>
                 <p>
-                    <a href="<?php echo base_url('roles/nuevo'); ?>" class="btn btn-primary"> Agregar</a>
-                    <a href="<?php echo base_url('roles/eliminados'); ?>" class="btn btn-warning"> Eliminados</a>
+                    <a href="<?php echo base_url('roles/nuevo'); ?>" class="btn btn-primary">Agregar</a>
+                    <a href="<?php echo base_url('roles/eliminados'); ?>" class="btn btn-warning">Eliminados</a>
                 </p>
             </div>
 

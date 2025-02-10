@@ -11,7 +11,7 @@
             </div>
         <?php } ?>
 
-        <form action="<?php echo base_url(); ?>roles/insertar" method="post" autocomplete="off">
+        <form action="<?php echo base_url('roles/insertar'); ?>" method="post" autocomplete="off">
 
         <div class="form-group">
             <div class="row">

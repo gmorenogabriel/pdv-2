@@ -10,7 +10,7 @@
             </div>
         <?php } ?>        
 
-        <form action="<?php echo base_url(); ?>roles/actualizar" method="post" enctype="multipart/form-data"  autocomplete="off">
+        <form action="<?php echo base_url('roles/actualizar'); ?>" method="post" enctype="multipart/form-data"  autocomplete="off">
             <input type="hidden" id="id" name="id" value="<?php echo $rol['id']; ?>" />
 
         <div class="row col-md-12">

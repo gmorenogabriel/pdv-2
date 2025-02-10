@@ -1,7 +1,7 @@
 <div id="layoutSidenav_content">
 <main>
     <div class="container-fluid">
-        <h1 class="mt-4"><?php echo $titulo . ' donde'; ?></h1>
+        <h1 class="mt-4"><?php echo $titulo; ?></h1>
         <hr color="cyan"></hr>
             <div>
                 <p>
@@ -31,7 +31,7 @@
                                 <td><?php echo $dato['nombre']; ?></td>
                                 <td><?php echo $dato['precio_venta']; ?></td>
                                 <td><?php echo $dato['existencias']; ?></td>             
-                                <td><a href="#" data-href="<?php echo base_url() . 'roles/reingresar/' . $dato['id']; ?>;" 
+                                <td><a href="#" data-href="<?php echo base_url('roles/reingresar/') . $dato['id']; ?>;" 
                                        data-toggle="modal" data-target="#modal-confirma" data-placement="top" 
                                        title="Reingresar registro"><i class="fa fa-3x fa-arrow-alt-circle-up"></i></a></td>
                             </tr>

@@ -8,7 +8,6 @@ use App\Models\MenusModel;
 
 class Roles extends BaseController{
 
-
     protected $clase;
     protected $permisos;
     protected $reglas;

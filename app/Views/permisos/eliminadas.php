@@ -1,7 +1,7 @@
 <div id="layoutSidenav_content">
 <main>
     <div class="container-fluid">
-        <h1 class="mt-4"><?php echo $titulo; ?></h1>
+        <h1 class="mt-4"><?php echo $titulo;?></h1>
         <hr color="cyan"></hr>
             <div>
                 <p>
