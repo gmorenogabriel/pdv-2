@@ -1,11 +1,11 @@
 <div id="layoutSidenav_content">
 <main>
     <div class="container-fluid">
-        <h1 class="mt-4"><?php echo $titulo; ?></h1>
+        <h1 class="mt-4"><?php echo $titulo . ' donde'; ?></h1>
         <hr color="cyan"></hr>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>roles" class="btn btn-warning">Roles</a>
+                    <a href="<?php echo base_url('roles'); ?>" class="btn btn-warning">Roles</a>
                 </p>
 
             </div>

@@ -5,7 +5,7 @@
         <hr color="cyan"></hr>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning">Productos</a>
+                    <a href="<?php echo base_url('productos'); ?>" class="btn btn-warning">Productos</a>
                 </p>
 
             </div>
@@ -31,7 +31,7 @@
                                 <td><?php echo $dato['nombre']; ?></td>
                                 <td><?php echo $dato['precio_venta']; ?></td>
                                 <td><?php echo $dato['existencias']; ?></td>             
-                                <td><a href="#" data-href="<?php echo base_url() . '/productos/reingresar/' . $dato['id']; ?>;" 
+                                <td><a href="#" data-href="<?php echo base_url() . 'productos/reingresar/' . $dato['id']; ?>;" 
                                        data-toggle="modal" data-target="#modal-confirma" data-placement="top" 
                                        title="Reingresar registro"><i class="fa fa-3x fa-arrow-alt-circle-up"></i></a></td>
                             </tr>
