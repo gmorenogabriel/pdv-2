@@ -57,7 +57,7 @@
                     <div class="card-body">
                     <i class="fa fa-eye" aria-hidden="true"></i> Productos con stock mínimo:    <?=  $stockMinProd; ?> 
                     </div>
-                    <a class="card-footer text-white" href="<?php echo base_url(); ?>productos"> Ver detalles</a>
+                    <a class="card-footer text-white" href="<?php echo base_url('productos/stockMinimoProdAviso'); ?>"> Ver detalles</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                         <i class="fa fa-user"></i>
                         Server Side puro
                     </div>
-                        <a class="card-footer text-white" href="http://localhost:8074/dt_serverside/"> Server Side 
+                        <a class="card-footer text-white" href="http://localhost:8084/dt_serverside/"> Server Side 
                         <i style="width: 0.75rem; height: 0.75rem;" class="spinner-grow text-muted" id="redondo"></i></a>
                     </div>
             </div>
@@ -93,7 +93,7 @@
                     <i class="fa fa-users"></i>
                     Server Side con Iconos
                     </div>
-                    <a class="card-footer text-white" href="http://localhost:8074/dt_ss/"> Server Side 
+                    <a class="card-footer text-white" href="http://localhost:8084/dt_ss/"> Server Side 
                     <i style="width: 0.75rem; height: 0.75rem;" class="spinner-grow text-muted" id="redondo"></i></a>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                     <i class="fa fa-envelope"></i>
                     Enviar Mail
                     </div>
-                    <a class="card-footer text-white" href="<?php echo base_url(); ?>EnvioEMail/index"> Ejecutar
+                    <a class="card-footer text-white" href="<?php echo base_url('EnvioEMail/index'); ?>" Ejecutar
                     <i style="width: 0.75rem; height: 0.75rem;" class="spinner-border text-primary" id="redondo"></i></a>
                 </div>
             </div>

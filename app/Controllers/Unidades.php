@@ -191,7 +191,7 @@ class Unidades extends BaseController{
         ];
 
         echo view('header');
-		echo view($this->clase . '/nuevo', $data);
+		echo view('unidades/nuevo', $data);
 //		echo view('unidades/nuevo', $data);
 		echo view('footer');
     }

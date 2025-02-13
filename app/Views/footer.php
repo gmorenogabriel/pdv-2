@@ -16,10 +16,10 @@
 <!-- Al final de tu archivo footer.php -->
 
 <!-- <script src="<?php echo base_url(); ?>js/Chart.js"></script> -->
- <!-- JS de Bootstrap y jQuery -->
+ <!-- JS de Bootstrap y jQuery 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
+-->
     <!-- DataTables JS -->
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
@@ -29,7 +29,6 @@
     <script src="<?php echo base_url(); ?>js/mis-js/genera_excel_pdf.js"></script>
 <script src="<?php echo base_url(); ?>font-awesome/js/all.js" crossorigin="anonymous"></script>
 <!-- <script src="<?php echo base_url(); ?>js/sweetalert2.all.min.js" crossorigin="anonymous"></script> -->
-<script src="<?php echo base_url(); ?>js/mis-js/genera_excel_pdf.js"></script>
 
 
 <script>

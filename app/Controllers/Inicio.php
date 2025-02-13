@@ -41,6 +41,10 @@ class Inicio extends BaseController{
 		//$totalCompras = $this->comprasModel->totalCompras(date('Y-m-d')); //2020-11-28
 		$totalProductos= $this->productoModel->totalProductos();
 		$stockMinProd = $this->productoModel->stockMinimoProductos();
+
+		$empresa = $this->configEmpresa();
+		$stockMinProd = $empresa->empresaStockMinProd;
+
 		$clientes = $this->clientesModel->inicioClientes();
 	
 		$datos = [

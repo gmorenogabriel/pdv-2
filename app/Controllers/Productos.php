@@ -932,28 +932,34 @@ class Productos extends BaseController{
             print_r($data);
         }
     }
-    
-    public function graficastockMinimoProductos(){
+	public function stockMinimoProdAviso(){
+	//echo "stockMinimoProdAviso";
+	$empresa = $this->configEmpresa('empresaStockMinProd');
+	//dd($empresa->empresaStockMinProd);
+		
+        $where = "where stock_minimo <= $empresa->empresaStockMinProd AND inventariable='1' AND activo='1'";
+        $sQuery = "SELECT id, codigo, precio_compra, precio_venta, stock_minimo, nombre, existencias FROM productos " . $where;
+        
+        $db = db_connect();
+        $query = $db->query($sQuery)->getResultArray();
+		d($db->getLastQuery());
+		
+		$data = [ 
+            'titulo' => 'Productos con Stock mínimo ' . $empresa->empresaStockMinProd,
+            'datos' => $query,
+        ];
+		echo view('header');
+		echo view('productos/productos', $data);
+		echo view('footer');
+    }
 
+    public function graficastockMinimoProductos(){
+ 		
         $where = "where stock_minimo >= existencias AND inventariable='1' AND activo='1'";
         $sQuery = "SELECT nombre, existencias FROM productos " . $where;
         
         $db = db_connect();
-        $query = $db->query($sQuery)->getResultArray();
-
-// return json_encode($query);
-/*         if(isset($query)){
-            echo json_encode($query);
-        }else{
-            echo json_encode('');
-        } */
-		
-		  $data = [
-            // Aquí tus datos, por ejemplo:
-            ['nombre' => 'Papeles', 'existencias' => 50],
-            ['nombre' => 'Cheques', 'existencias' => 30],
-            ['nombre' => 'Documentos', 'existencias' => 10],			
-        ];
+        $query = $db->query($sQuery)->getResultArray()
 
         return $this->response->setJSON($query);
 		

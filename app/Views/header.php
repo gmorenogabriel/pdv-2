@@ -40,6 +40,9 @@ $user_session = session();
 	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	
     <!-- Estilos personalizados -->
     <link href="<?php echo base_url('css/styles.css'); ?>" rel="stylesheet" />
     <link href="<?php echo base_url('css/style.min.css'); ?>" rel="stylesheet" />
